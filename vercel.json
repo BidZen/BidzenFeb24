@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/sell",    "destination": "/#contact", "permanent": false },
+    { "source": "/buy",     "destination": "/",         "permanent": false },
+    { "source": "/contact", "destination": "/#contact", "permanent": false },
+    { "source": "/about",   "destination": "/#why",     "permanent": false }
+  ]
+}

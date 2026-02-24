@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bid Zen | Attorney-Powered Real Estate | South Florida</title>
+<meta name="description" content="The only brokerage in South Florida where your transaction is protected by attorney-client privilege. List from 0.5%. Full-service concierge at 2%.">
+<meta name="keywords" content="South Florida real estate, attorney broker, discount listing, MLS listing, Fort Lauderdale real estate, attorney-client privilege, flat fee listing">
+<meta name="author" content="Glen Shrayer, Esq.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://bidzen.com/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Bid Zen | Attorney-Powered Real Estate">
+<meta property="og:description" content="The only brokerage in South Florida where every transaction is protected by attorney-client privilege. List from 0.5%.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bidzen.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="BidZen">
+<meta property="og:image" content="https://bidzen.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bid Zen – Attorney-Powered Real Estate in South Florida">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@bidzenrealty">
+<meta name="twitter:title" content="Bid Zen | Attorney-Powered Real Estate">
+<meta name="twitter:description" content="The only brokerage in South Florida where every transaction is protected by attorney-client privilege. List from 0.5%.">
+<meta name="twitter:image" content="https://bidzen.com/images/og-image.png">
+<meta name="twitter:image:alt" content="Bid Zen – Attorney-Powered Real Estate in South Florida">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/images/bidzen-logo.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "BidZen LLC",
+  "description": "Attorney-powered real estate brokerage with AI efficiency. Full MLS listing from 0.5%.",
+  "url": "https://bidzen.com",
+  "telephone": "+1-888-824-3936",
+  "email": "info@bidzen.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Glen Shrayer",
+    "jobTitle": "Managing Broker / Attorney",
+    "description": "Licensed attorney (FL Bar #0057253) and real estate broker (CQ1060113)"
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Florida"
+  },
+  "priceRange": "0.5% - 2% listing commission"
+}
+</script>
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black: #0a0a0a;
+  --rich: #0f0f0f;
+  --dark: #161616;
+  --dark2: #1c1c1c;
+  --dark3: #242424;
+  --dborder: #282828;
+  --mid: #777;
+  --mid-l: #999;
+  --light: #bbb;
+  --off-w: #ede9e1;
+  --warm-w: #f5f2ec;
+  --cream: #f9f7f3;
+  --white: #fefefe;
+  --sage: #4a7c5c;
+  --sage-b: #5fa372;
+  --sage-dim: rgba(74,124,92,0.08);
+  --sage-glow: rgba(95,163,114,0.12);
+  --gold: #c4a265;
+  --gold-dim: rgba(196,162,101,0.08);
+  --amber: #a8842e;
+  --amber-s: #c9a04a;
+  --amber-bg: #fcf8ef;
+  --amber-bg2: #f8f2e4;
+  --amber-br: #e8dcc2;
+  --red-soft: #c0392b;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Outfit', system-ui, -apple-system, sans-serif;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: var(--sans);
+  color: var(--dark);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+a { text-decoration: none; color: inherit; }
+::selection { background: rgba(74,124,92,0.15); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2.5rem; }
+
+/* ─── NAV ─── */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 2000;
+  height: 64px; display: flex; align-items: center;
+  padding: 0 2.5rem;
+  transition: all 0.5s var(--ease);
+}
+.nav.solid {
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(40px) saturate(1.4);
+  -webkit-backdrop-filter: blur(40px) saturate(1.4);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.04);
+}
+.nav-inner {
+  max-width: 1200px; width: 100%; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+/* ─── LOGO ─── */
+.nav-logo {
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.nav-logo img {
+  height: 32px; width: auto;
+}
+.nav-logo-text {
+  font-family: var(--serif);
+  font-size: 1.55rem; font-weight: 500;
+  color: var(--off-w); letter-spacing: -0.04em;
+}
+.nav-logo-text i { font-style: italic; color: var(--gold); }
+
+.nav-center { display: flex; gap: 2rem; }
+.nav-center a {
+  font-size: 0.74rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.4); transition: color 0.3s;
+}
+.nav-center a:hover { color: rgba(255,255,255,0.85); }
+.nav-right { display: flex; align-items: center; gap: 1.25rem; }
+.nav-tel { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+.nav-tel a { color: inherit; }
+.nav-tel a:hover { color: rgba(255,255,255,0.6); }
+.nav-cta {
+  font-size: 0.7rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 0.5rem 1.4rem; border-radius: 100px;
+  background: var(--off-w); color: var(--black);
+  border: none; cursor: pointer; transition: all 0.3s var(--ease);
+}
+.nav-cta:hover { background: #fff; transform: translateY(-1px); }
+.mob-btn {
+  display: none; background: none; border: none;
+  cursor: pointer; width: 26px; height: 18px; position: relative;
+}
+.mob-btn span {
+  display: block; position: absolute; left: 0; right: 0;
+  height: 1.5px; background: var(--off-w); border-radius: 1px;
+  transition: all 0.3s var(--ease);
+}
+.mob-btn span:nth-child(1) { top: 0; }
+.mob-btn span:nth-child(2) { top: 8px; }
+.mob-btn span:nth-child(3) { top: 16px; }
+.mob-btn.active span:nth-child(1) { top: 8px; transform: rotate(45deg); }
+.mob-btn.active span:nth-child(2) { opacity: 0; }
+.mob-btn.active span:nth-child(3) { top: 8px; transform: rotate(-45deg); }
+.mob-menu {
+  display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0;
+  background: rgba(10,10,10,0.98); backdrop-filter: blur(30px);
+  z-index: 1999; padding: 2rem 2.5rem;
+  flex-direction: column; gap: 1.5rem;
+}
+.mob-menu.open { display: flex; }
+.mob-menu a {
+  font-size: 1.2rem; color: rgba(255,255,255,0.6); font-weight: 400;
+  transition: color 0.2s;
+}
+.mob-menu a:hover { color: rgba(255,255,255,0.9); }
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  background: var(--black); color: var(--off-w);
+  display: flex; align-items: center;
+  padding: 8rem 2.5rem 5rem;
+  position: relative; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 55% at 72% 35%, rgba(74,124,92,0.05) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 70% at 15% 80%, rgba(196,162,101,0.03) 0%, transparent 100%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.hero-line {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196,162,101,0.18), transparent);
+}
+.hero-grid {
+  max-width: 1200px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem; align-items: center;
+  position: relative; z-index: 2;
+}
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 0.8rem;
+  font-size: 0.62rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.22em;
+  color: var(--gold); margin-bottom: 1.75rem;
+  opacity: 0; animation: ru 0.7s var(--ease) 0.1s forwards;
+}
+.hero-tag::after { content: ''; width: 40px; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); }
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5.2vw, 4.2rem);
+  font-weight: 300; line-height: 1.06;
+  letter-spacing: -0.035em; margin-bottom: 1.75rem;
+  opacity: 0; animation: ru 0.85s var(--ease) 0.2s forwards;
+}
+.hero h1 strong {
+  font-weight: 500; font-style: italic;
+  background: linear-gradient(135deg, var(--sage-b), var(--gold));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.hero-sub {
+  font-size: 1.02rem; font-weight: 300;
+  color: rgba(237,233,225,0.45); line-height: 1.8;
+  max-width: 500px; margin-bottom: 2.25rem;
+  opacity: 0; animation: ru 0.85s var(--ease) 0.35s forwards;
+}
+.hero-sub b { color: var(--off-w); font-weight: 500; }
+
+/* Hero lead form */
+.hero-form-wrap {
+  opacity: 0; animation: ru 0.85s var(--ease) 0.5s forwards;
+}
+.hero-form {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  max-width: 520px;
+}
+.hero-form input {
+  flex: 1; min-width: 140px;
+  padding: 0.8rem 1rem; border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  color: var(--off-w); font-family: var(--sans);
+  font-size: 0.85rem; font-weight: 400;
+  outline: none; transition: border-color 0.3s;
+}
+.hero-form input::placeholder { color: rgba(255,255,255,0.25); }
+.hero-form input:focus { border-color: rgba(74,124,92,0.4); background: rgba(255,255,255,0.06); }
+.hero-form button {
+  padding: 0.8rem 1.75rem; border-radius: 10px;
+  background: var(--sage); color: white;
+  font-family: var(--sans); font-size: 0.82rem;
+  font-weight: 600; border: none; cursor: pointer;
+  transition: all 0.3s var(--ease);
+  white-space: nowrap;
+}
+.hero-form button:hover { background: var(--sage-b); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(74,124,92,0.3); }
+.hero-form-note {
+  font-size: 0.68rem; color: rgba(255,255,255,0.2);
+  margin-top: 0.5rem;
+}
+
+/* Hero stats */
+.hero-stats {
+  margin-top: 2.5rem; padding-top: 1.75rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex; gap: 2.5rem;
+  opacity: 0; animation: ru 0.85s var(--ease) 0.6s forwards;
+}
+.hstat-v {
+  font-family: var(--serif); font-style: italic;
+  font-size: 2rem; color: var(--off-w); font-weight: 400; line-height: 1;
+}
+.hstat-l {
+  font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.2); margin-top: 0.3rem;
+}
+
+/* Hero comparison card */
+.hero-card-w { opacity: 0; animation: ru 0.85s var(--ease) 0.4s forwards; }
+.hcard {
+  background: var(--rich); border: 1px solid var(--dborder);
+  border-radius: 22px; padding: 2rem; position: relative; overflow: hidden;
+}
+.hcard::before {
+  content: ''; position: absolute; top: -40%; right: -30%;
+  width: 80%; height: 80%;
+  background: radial-gradient(circle, rgba(74,124,92,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hcard-top {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1.25rem; position: relative; z-index: 1;
+}
+.hcard-lbl {
+  font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.25);
+}
+.hcard-val {
+  font-family: var(--serif); font-style: italic;
+  font-size: 1.1rem; color: var(--off-w);
+}
+.hcard-rows { display: flex; flex-direction: column; gap: 0.45rem; position: relative; z-index: 1; }
+.hr {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.6rem 0.85rem; border-radius: 10px; font-size: 0.84rem;
+}
+.hr.off { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.04); }
+.hr.off .hr-n { color: rgba(255,255,255,0.35); }
+.hr.off .hr-v { color: rgba(255,255,255,0.2); text-decoration: line-through; }
+.hr.on { background: var(--sage-glow); border: 1px solid rgba(74,124,92,0.2); }
+.hr.on .hr-n { color: var(--sage-b); font-weight: 600; }
+.hr.on .hr-v { color: var(--sage-b); font-weight: 700; }
+.hcard-total {
+  margin-top: 0.65rem; padding: 1.1rem;
+  background: linear-gradient(135deg, var(--sage) 0%, #3a6a4e 100%);
+  border-radius: 14px; text-align: center;
+  position: relative; z-index: 1;
+}
+.hcard-total .big {
+  font-family: var(--serif); font-style: italic;
+  font-size: 2.4rem; color: white; display: block; line-height: 1;
+}
+.hcard-total .sm { font-size: 0.7rem; color: rgba(255,255,255,0.6); display: block; margin-top: 0.2rem; }
+.hcard-foot { font-size: 0.62rem; color: rgba(255,255,255,0.15); text-align: center; margin-top: 0.5rem; }
+
+/* ─── RIBBON ─── */
+.ribbon {
+  background: var(--dark); border-top: 1px solid var(--dborder);
+  border-bottom: 1px solid var(--dborder);
+  padding: 1.6rem 0; overflow: hidden;
+}
+.ribbon-track {
+  display: flex; gap: 3rem;
+  animation: marquee 40s linear infinite; width: max-content;
+}
+.ribbon-item {
+  font-size: 0.65rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.18); white-space: nowrap;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.ribbon-item::before { content: '✦'; font-size: 0.4rem; color: var(--gold); opacity: 0.35; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+/* ─── PRIVILEGE SECTION ─── */
+.priv-section {
+  padding: 7rem 2.5rem;
+  background: var(--white);
+  position: relative;
+}
+.priv-inner {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4rem; align-items: center;
+}
+.priv-badge {
+  font-size: 0.6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--sage); margin-bottom: 0.75rem;
+}
+.priv-inner h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  font-weight: 400; color: var(--dark);
+  line-height: 1.12; letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+}
+.priv-inner h2 em { font-style: italic; color: var(--sage); }
+.priv-inner p {
+  font-size: 0.95rem; color: var(--mid);
+  line-height: 1.8; font-weight: 300;
+  margin-bottom: 1rem;
+}
+.priv-compare {
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.priv-box {
+  padding: 1.5rem; border-radius: 14px;
+}
+.priv-box.bad {
+  background: #fdf5f2;
+  border: 1px solid #f0ddd8;
+}
+.priv-box.good {
+  background: var(--sage-dim);
+  border: 1px solid rgba(74,124,92,0.12);
+}
+.priv-box-label {
+  font-size: 0.62rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+}
+.priv-box.bad .priv-box-label { color: var(--red-soft); }
+.priv-box.good .priv-box-label { color: var(--sage); }
+.priv-box p {
+  font-size: 0.88rem; line-height: 1.6;
+  margin-bottom: 0;
+}
+.priv-box.bad p { color: #8a5a50; }
+.priv-box.good p { color: #3a6a4e; font-weight: 500; }
+
+/* ─── TIERS ─── */
+.tiers-section { padding: 7rem 2.5rem; background: var(--cream); }
+.sec-eye {
+  font-size: 0.6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--sage); margin-bottom: 0.75rem;
+}
+.sec-h {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  font-weight: 400; color: var(--dark);
+  line-height: 1.12; letter-spacing: -0.025em;
+}
+.sec-h em { font-style: italic; color: var(--sage); }
+.sec-p {
+  font-size: 1rem; color: var(--mid); line-height: 1.75;
+  max-width: 540px; margin-top: 0.6rem; font-weight: 300;
+}
+.tiers-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem; margin-top: 3.5rem;
+}
+.tier {
+  border: 1px solid #e4e0d8; border-radius: 18px;
+  padding: 2.5rem 2rem 2rem; background: var(--white);
+  transition: all 0.4s var(--ease); position: relative;
+  display: flex; flex-direction: column;
+}
+.tier:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.05); border-color: #d0ccc4; }
+.tier.pop {
+  border-color: var(--sage);
+  background: linear-gradient(180deg, rgba(74,124,92,0.02) 0%, var(--white) 40%);
+}
+.tier.pop::before {
+  content: 'Most Popular';
+  position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
+  background: var(--sage); color: white;
+  font-size: 0.58rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  padding: 0.3rem 1rem; border-radius: 100px;
+}
+.tier-badge {
+  font-size: 0.58rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--mid-l); margin-bottom: 0.75rem;
+}
+.tier h3 {
+  font-family: var(--serif); font-size: 1.5rem;
+  font-weight: 500; color: var(--dark);
+  margin-bottom: 0.2rem; letter-spacing: -0.02em;
+}
+.tier-price {
+  font-family: var(--serif); font-style: italic;
+  font-size: 2.4rem; color: var(--sage);
+  font-weight: 400; line-height: 1; margin-bottom: 0.2rem;
+}
+.tier-pn {
+  font-size: 0.75rem; color: var(--mid-l);
+  margin-bottom: 1.25rem;
+}
+.tier-desc {
+  font-size: 0.85rem; color: var(--mid);
+  line-height: 1.65; font-weight: 300;
+  font-style: italic; margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #eee;
+}
+.tier-list {
+  list-style: none; flex: 1;
+  display: flex; flex-direction: column; gap: 0.45rem;
+  margin-bottom: 1.75rem;
+}
+.tier-list li {
+  font-size: 0.84rem; color: var(--mid);
+  font-weight: 400; line-height: 1.5;
+  display: flex; align-items: flex-start; gap: 0.5rem;
+}
+.tier-list li::before {
+  content: '✓'; color: var(--sage); font-weight: 700;
+  font-size: 0.72rem; margin-top: 0.15rem; flex-shrink: 0;
+}
+.tier-btn {
+  display: block; text-align: center;
+  padding: 0.8rem 1.5rem; border-radius: 100px;
+  font-size: 0.82rem; font-weight: 600;
+  transition: all 0.3s var(--ease);
+  border: 1.5px solid #ddd; color: var(--dark);
+  background: transparent; cursor: pointer;
+}
+.tier-btn:hover { border-color: var(--dark); background: var(--dark); color: white; }
+.tier.pop .tier-btn { background: var(--sage); color: white; border-color: var(--sage); }
+.tier.pop .tier-btn:hover { background: var(--sage-b); border-color: var(--sage-b); }
+
+/* ─── INVESTOR PIPELINE ─── */
+.investor-section { padding: 7rem 2.5rem; background: var(--white); }
+.pipeline {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; margin-top: 3.5rem; flex-wrap: wrap;
+}
+.pipe-step {
+  text-align: center; position: relative;
+  padding: 1.5rem 1.75rem;
+  background: var(--white);
+  border: 1px solid #e4e0d8;
+  border-radius: 14px;
+  min-width: 150px;
+  transition: all 0.3s var(--ease);
+}
+.pipe-step:hover { border-color: var(--sage); box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.pipe-step .pipe-num {
+  font-family: var(--serif); font-style: italic;
+  font-size: 1.8rem; color: #e8e4dc; line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.pipe-step h4 {
+  font-size: 0.82rem; font-weight: 600;
+  color: var(--dark); margin-bottom: 0.2rem;
+}
+.pipe-step p {
+  font-size: 0.75rem; color: var(--mid);
+  font-weight: 300; line-height: 1.5;
+}
+.pipe-arrow {
+  font-size: 1.2rem; color: #d4d0c8;
+  padding: 0 0.5rem;
+  flex-shrink: 0;
+}
+
+/* ─── PROCESS ─── */
+.process-section { padding: 7rem 2.5rem; background: var(--cream); }
+.proc-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 0; margin-top: 3.5rem; position: relative;
+}
+.proc-grid::before {
+  content: ''; position: absolute; top: 20px; left: 12.5%; right: 12.5%;
+  height: 1px; background: linear-gradient(90deg, var(--sage), rgba(74,124,92,0.1));
+}
+.proc-item { text-align: center; position: relative; }
+.proc-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--sage); margin: 0 auto 1.5rem;
+  position: relative; z-index: 2;
+  box-shadow: 0 0 0 4px var(--cream), 0 0 0 5px rgba(74,124,92,0.12);
+}
+.proc-item h4 { font-size: 0.88rem; font-weight: 600; color: var(--dark); margin-bottom: 0.35rem; }
+.proc-item p { font-size: 0.82rem; color: var(--mid); line-height: 1.65; font-weight: 300; padding: 0 0.75rem; }
+
+/* ─── CALCULATOR ─── */
+.calc-section { padding: 7rem 2.5rem; background: var(--white); }
+.calc-box {
+  max-width: 580px; margin: 3.5rem auto 0;
+  border: 1px solid #e4e0d8; border-radius: 22px;
+  padding: 2.5rem; background: var(--white);
+}
+.calc-head { font-size: 0.85rem; font-weight: 500; color: var(--dark); margin-bottom: 0.5rem; }
+.calc-val {
+  font-family: var(--serif); font-style: italic;
+  font-size: 3rem; color: var(--dark); text-align: center;
+  margin-bottom: 0.75rem; line-height: 1;
+}
+input[type=range] {
+  width: 100%; -webkit-appearance: none; appearance: none;
+  height: 3px; border-radius: 2px; background: #e0dcd4;
+  outline: none; cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 22px; height: 22px;
+  border-radius: 50%; background: var(--dark);
+  border: 3px solid white; box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 22px; height: 22px;
+  border-radius: 50%; background: var(--dark);
+  border: 3px solid white; box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+.calc-labels {
+  display: flex; justify-content: space-between;
+  font-size: 0.65rem; color: var(--mid-l); margin: 0.3rem 0 1.5rem;
+}
+.calc-stack { display: flex; flex-direction: column; gap: 0.4rem; }
+.cs { display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 0.85rem; border-radius: 10px; font-size: 0.85rem; }
+.cs-trad { background: #fdf5f2; }
+.cs-trad .cs-v { color: var(--red-soft); font-weight: 600; text-decoration: line-through; }
+.cs-mid { background: var(--cream); }
+.cs-mid .cs-v { color: var(--mid); font-weight: 500; }
+.cs-ours { background: var(--sage-dim); border: 1px solid rgba(74,124,92,0.1); }
+.cs-ours .cs-n { color: var(--sage); font-weight: 600; }
+.cs-ours .cs-v { color: var(--sage); font-weight: 700; }
+.cs-n { font-weight: 400; color: var(--dark); }
+.cs-p { font-size: 0.7rem; color: var(--mid-l); margin-left: 0.3rem; }
+.calc-result {
+  margin-top: 0.65rem; padding: 1.2rem;
+  background: var(--dark); border-radius: 14px;
+  text-align: center; color: var(--off-w);
+}
+.calc-result .cr-big { font-family: var(--serif); font-style: italic; font-size: 2.4rem; display: block; line-height: 1; }
+.calc-result .cr-sm { font-size: 0.7rem; opacity: 0.4; display: block; margin-top: 0.2rem; }
+.calc-fn { font-size: 0.65rem; color: var(--mid-l); text-align: center; margin-top: 0.6rem; line-height: 1.6; }
+
+/* ─── WHY DIFFERENT ─── */
+.why-section { padding: 7rem 2.5rem; background: var(--cream); }
+.why-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem; margin-top: 3.5rem;
+}
+.why-card {
+  padding: 2rem; border: 1px solid #e4e0d8;
+  border-radius: 14px; background: var(--white);
+  transition: all 0.35s var(--ease);
+}
+.why-card:hover { border-color: #ccc8bf; box-shadow: 0 6px 24px rgba(0,0,0,0.03); }
+.why-icon {
+  width: 32px; height: 32px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.95rem; margin-bottom: 0.75rem;
+  background: var(--sage-dim);
+}
+.why-card h4 { font-size: 0.92rem; font-weight: 600; color: var(--dark); margin-bottom: 0.35rem; }
+.why-card p { font-size: 0.85rem; color: var(--mid); line-height: 1.65; font-weight: 300; }
+
+/* ─── FAQ ─── */
+.faq-section { padding: 7rem 2.5rem; background: var(--white); }
+.faq-grid {
+  max-width: 740px; margin: 3rem auto 0;
+  display: flex; flex-direction: column; gap: 0;
+}
+.faq-item {
+  border-bottom: 1px solid #eae6de;
+}
+.faq-q {
+  width: 100%; background: none; border: none;
+  padding: 1.25rem 0; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--sans); font-size: 0.95rem;
+  font-weight: 500; color: var(--dark);
+  text-align: left;
+}
+.faq-q::after {
+  content: '+'; font-size: 1.2rem; color: var(--mid-l);
+  transition: transform 0.3s var(--ease);
+  flex-shrink: 0; margin-left: 1rem;
+}
+.faq-q.open::after { transform: rotate(45deg); }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s var(--ease), padding 0.4s var(--ease);
+  padding: 0 0 0 0;
+}
+.faq-a.open {
+  max-height: 300px;
+  padding: 0 0 1.25rem 0;
+}
+.faq-a p {
+  font-size: 0.88rem; color: var(--mid);
+  line-height: 1.7; font-weight: 300;
+}
+
+
+/* ════════════════════════════════════════════
+   HOA LEGAL ZONE
+   ════════════════════════════════════════════ */
+.legal-transition {
+  height: 100px;
+  background: linear-gradient(180deg, var(--white) 0%, var(--amber-bg) 100%);
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.legal-tab {
+  background: var(--amber-bg); border: 1px solid var(--amber-br);
+  border-bottom: none; border-radius: 10px 10px 0 0;
+  padding: 0.55rem 2rem;
+  font-size: 0.56rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.18em; color: var(--amber);
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.legal-tab::before { content: '⚖'; font-size: 0.75rem; }
+
+.hoa-zone {
+  background: var(--amber-bg); border-top: 2px solid var(--amber-br);
+  padding: 5rem 2.5rem 5.5rem; position: relative; overflow: hidden;
+}
+.hoa-zone::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c4a265' fill-opacity='0.025'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 0 0-30 15 15 0 0 0 0 30z'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.hoa-grid {
+  max-width: 1000px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem; align-items: start;
+  position: relative; z-index: 1;
+}
+.hoa-eye {
+  font-size: 0.6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.18em; color: var(--amber-s);
+  margin-bottom: 0.75rem;
+}
+.hoa-zone h2 {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+  font-weight: 400; color: var(--dark);
+  line-height: 1.12; letter-spacing: -0.025em; margin-bottom: 1.25rem;
+}
+.hoa-zone h2 em { font-style: italic; color: var(--amber); }
+.hoa-text {
+  font-size: 0.92rem; color: #6b6050;
+  line-height: 1.8; font-weight: 300; margin-bottom: 1.75rem;
+}
+.hoa-services {
+  list-style: none;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 2rem;
+}
+.hoa-services li {
+  font-size: 0.84rem; color: #5c5040; font-weight: 400;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.hoa-services li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--amber-s); flex-shrink: 0; }
+.hoa-cta-link {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  margin-top: 1.5rem; font-size: 0.85rem; font-weight: 600;
+  color: var(--amber); transition: gap 0.3s var(--ease);
+}
+.hoa-cta-link:hover { gap: 0.65rem; }
+.hoa-disc {
+  background: var(--white); border: 1px solid var(--amber-br);
+  border-radius: 16px; padding: 2rem; align-self: start;
+}
+.hoa-disc h4 {
+  font-size: 0.62rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--amber-s); margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.hoa-disc h4::before {
+  content: ''; width: 12px; height: 12px;
+  border: 1.5px solid var(--amber-s); border-radius: 3px;
+}
+.hoa-disc p { font-size: 0.78rem; color: #7d7060; line-height: 1.7; font-weight: 300; }
+.hoa-disc p + p { margin-top: 0.65rem; }
+.hoa-disc .line { height: 1px; background: var(--amber-br); margin: 0.85rem 0; }
+.hoa-disc p b { font-weight: 500; color: #5c5040; }
+
+
+/* ─── CTA ─── */
+.final-cta {
+  padding: 7rem 2.5rem; background: var(--black);
+  color: var(--off-w); text-align: center;
+  position: relative; overflow: hidden;
+}
+.final-cta::before {
+  content: ''; position: absolute; top: -40%; left: 10%; right: 10%;
+  height: 180%;
+  background: radial-gradient(ellipse 60% 40% at 50% 20%, rgba(74,124,92,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+.final-cta .sec-eye { color: var(--gold); }
+.final-cta .sec-h { color: var(--off-w); }
+.final-cta .sec-p { color: rgba(237,233,225,0.35); margin: 0.6rem auto 2.5rem; }
+.cta-row {
+  display: flex; gap: 0.7rem; justify-content: center;
+  flex-wrap: wrap; position: relative; z-index: 1; margin-bottom: 1.5rem;
+}
+.btn-sage { background: var(--sage); color: white; padding: 0.85rem 2rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; border: none; cursor: pointer; transition: all 0.3s var(--ease); }
+.btn-sage:hover { background: var(--sage-b); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(74,124,92,0.25); }
+.btn-edge2 { background: transparent; color: var(--off-w); border: 1px solid rgba(255,255,255,0.12); padding: 0.85rem 2rem; border-radius: 100px; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.3s var(--ease); }
+.btn-edge2:hover { border-color: rgba(255,255,255,0.35); }
+.cta-tel { font-size: 0.82rem; color: rgba(255,255,255,0.25); position: relative; z-index: 1; }
+.cta-tel a { color: rgba(255,255,255,0.55); font-weight: 500; }
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--black); border-top: 1px solid rgba(255,255,255,0.04);
+  padding: 3rem 2.5rem 2rem; color: rgba(255,255,255,0.25);
+}
+.ft-grid {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 2.5rem;
+}
+.ft-brand {
+  display: flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.ft-brand img { height: 24px; width: auto; opacity: 0.6; }
+.ft-brand-text { font-family: var(--serif); font-size: 1.3rem; color: rgba(255,255,255,0.6); }
+.ft-brand-text i { font-style: italic; color: var(--gold); }
+.ft-tag { font-size: 0.78rem; line-height: 1.6; max-width: 260px; }
+footer h5 {
+  font-size: 0.58rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.15); margin-bottom: 0.75rem;
+}
+.fl { list-style: none; }
+.fl li { margin-bottom: 0.3rem; }
+.fl a { font-size: 0.8rem; color: rgba(255,255,255,0.3); transition: color 0.2s; }
+.fl a:hover { color: rgba(255,255,255,0.65); }
+.ft-bottom {
+  max-width: 1200px; margin: 2rem auto 0;
+  padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.04);
+  font-size: 0.65rem; text-align: center; line-height: 1.9;
+}
+.ft-bottom a { color: rgba(255,255,255,0.25); }
+
+/* ─── ANIMATIONS ─── */
+@keyframes ru { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+.r { opacity:0; transform:translateY(18px); transition: opacity 0.75s var(--ease), transform 0.75s var(--ease); }
+.r.v { opacity:1; transform:translateY(0); }
+.rd1 { transition-delay:0.08s; } .rd2 { transition-delay:0.16s; } .rd3 { transition-delay:0.24s; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width:960px) {
+  .hero-grid { grid-template-columns:1fr; gap:3rem; }
+  .hero-card-w { max-width:420px; }
+  .priv-inner { grid-template-columns:1fr; }
+  .tiers-grid { grid-template-columns:1fr; max-width:420px; margin-left:auto; margin-right:auto; }
+  .pipeline { gap:0.5rem; }
+  .pipe-arrow { display:none; }
+  .proc-grid { grid-template-columns:repeat(2,1fr); gap:2.25rem; }
+  .proc-grid::before { display:none; }
+  .why-grid { grid-template-columns:1fr; }
+  .hoa-grid { grid-template-columns:1fr; }
+  .ft-grid { grid-template-columns:1fr 1fr; gap:2rem; }
+  .nav-center,.nav-tel { display:none; }
+  .mob-btn { display:block; }
+}
+@media (max-width:600px) {
+  .hero { padding:7rem 1.5rem 3.5rem; min-height:auto; }
+  .hero-stats { gap:1.5rem; flex-wrap:wrap; }
+  .hero-form { flex-direction:column; }
+  .hero-form input { min-width:auto; }
+  .tiers-section,.process-section,.calc-section,.why-section,.faq-section,.investor-section,.priv-section,.final-cta { padding:5rem 1.5rem; }
+  .hoa-zone { padding:3.5rem 1.5rem 4rem; }
+  .hoa-services { grid-template-columns:1fr; }
+  .proc-grid { grid-template-columns:1fr; }
+  .pipeline { flex-direction:column; }
+  .ft-grid { grid-template-columns:1fr; }
+  .calc-box { padding:1.5rem; }
+  .ribbon { display:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <!-- LOGO: Update src to your original 2019 logo file path -->
+    <a href="/" class="nav-logo">
+      <img src="/images/bidzen-logo.png" alt="BidZen" onerror="this.style.display='none'">
+      <span class="nav-logo-text">Bid<i>Zen</i></span>
+    </a>
+    <div class="nav-center" id="navCenter">
+      <a href="#privilege">Why Us</a>
+      <a href="#tiers">Pricing</a>
+      <a href="#process">Process</a>
+      <a href="#savings">Calculator</a>
+      <a href="#faq">FAQ</a>
+      <a href="#hoa">Legal</a>
+    </div>
+    <div class="nav-right">
+      <span class="nav-tel"><a href="tel:+18888243936">1-888-8-BIDZEN</a></span>
+      <a href="#tiers" class="nav-cta">View Pricing</a>
+    </div>
+    <button class="mob-btn" id="mobBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="#privilege" onclick="closeMob()">Why Us</a>
+  <a href="#tiers" onclick="closeMob()">Pricing</a>
+  <a href="#process" onclick="closeMob()">Process</a>
+  <a href="#savings" onclick="closeMob()">Calculator</a>
+  <a href="#faq" onclick="closeMob()">FAQ</a>
+  <a href="#hoa" onclick="closeMob()">Legal</a>
+  <a href="tel:+18888243936">1-888-8-BIDZEN</a>
+</div>
+
+<!-- ════════════════════════════════════════════ BROKERAGE ════════════════════════════════════════════ -->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-line"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-tag">Attorney-Powered Real Estate</div>
+      <h1>AI handles the marketing.<br><strong>An attorney handles the&nbsp;closing.</strong></h1>
+      <p class="hero-sub">
+        The only brokerage in South Florida where every transaction is protected by a <b>licensed attorney and broker</b>. AI replaces the overhead — not the expertise. List from <b>0.5%</b>. Full-service concierge at <b>2%</b>.
+      </p>
+      <div class="hero-form-wrap">
+        <form class="hero-form" onsubmit="return false;">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Email address" required>
+          <input type="text" placeholder="Property address">
+          <button type="submit">Get Free Valuation →</button>
+        </form>
+        <p class="hero-form-note">Free, no obligation. We'll send your custom valuation within 24 hours.</p>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hstat-v">0.5%</div><div class="hstat-l">Listing From</div></div>
+        <div><div class="hstat-v">20+</div><div class="hstat-l">Years Experience</div></div>
+        <div><div class="hstat-v">4</div><div class="hstat-l">State Licenses</div></div>
+      </div>
+    </div>
+    <div class="hero-card-w">
+      <div class="hcard">
+        <div class="hcard-top">
+          <span class="hcard-lbl">Listing Commission</span>
+          <span class="hcard-val">$750K Home</span>
+        </div>
+        <div class="hcard-rows">
+          <div class="hr off"><span class="hr-n">Traditional Agent · 3%</span><span class="hr-v">$22,500</span></div>
+          <div class="hr off"><span class="hr-n">Redfin · 1.5%</span><span class="hr-v">$11,250</span></div>
+          <div class="hr on"><span class="hr-n">Bid Zen · 0.5%</span><span class="hr-v">$3,750</span></div>
+        </div>
+        <div class="hcard-total">
+          <span class="big">$18,750</span>
+          <span class="sm">saved vs. traditional agent</span>
+        </div>
+        <p class="hcard-foot">Listing-side only. Buyer agent commission separate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RIBBON -->
+<div class="ribbon">
+  <div class="ribbon-track">
+    <span class="ribbon-item">Full MLS Listing</span>
+    <span class="ribbon-item">Zillow · Realtor.com · Redfin</span>
+    <span class="ribbon-item">Licensed FL Attorney</span>
+    <span class="ribbon-item">FL Broker CQ1060113</span>
+    <span class="ribbon-item">Attorney-Client Privilege</span>
+    <span class="ribbon-item">AI-Powered Marketing</span>
+    <span class="ribbon-item">100+ Platforms</span>
+    <span class="ribbon-item">Equal Housing Opportunity</span>
+    <span class="ribbon-item">Full MLS Listing</span>
+    <span class="ribbon-item">Zillow · Realtor.com · Redfin</span>
+    <span class="ribbon-item">Licensed FL Attorney</span>
+    <span class="ribbon-item">FL Broker CQ1060113</span>
+    <span class="ribbon-item">Attorney-Client Privilege</span>
+    <span class="ribbon-item">AI-Powered Marketing</span>
+    <span class="ribbon-item">100+ Platforms</span>
+    <span class="ribbon-item">Equal Housing Opportunity</span>
+  </div>
+</div>
+
+<!-- PRIVILEGE -->
+<section class="priv-section" id="privilege">
+  <div class="priv-inner r">
+    <div>
+      <div class="priv-badge">Your Unfair Advantage</div>
+      <h2>Your pricing strategy is <em>legally privileged.</em></h2>
+      <p>When you work with a traditional real estate agent, every conversation about your bottom-line price, your financial pressure to sell, your negotiating weaknesses — all of it is discoverable in a dispute.</p>
+      <p>When your broker is also your attorney, those conversations are protected by <strong>attorney-client privilege</strong>. That's a material legal advantage no discount brokerage, no AI platform, and no traditional agent can offer.</p>
+    </div>
+    <div class="priv-compare r rd2">
+      <div class="priv-box bad">
+        <div class="priv-box-label">Traditional Agent</div>
+        <p>You tell your agent: "I'll accept $680K but list at $750K." That's discoverable. In a dispute, the buyer's attorney can access it. Your negotiating position is exposed.</p>
+      </div>
+      <div class="priv-box good">
+        <div class="priv-box-label">Bid Zen · Attorney-Broker</div>
+        <p>Same conversation — but it's privileged. Protected by the attorney-client relationship. Your strategy stays confidential. Full stop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section class="tiers-section" id="tiers">
+  <div class="container">
+    <div class="r">
+      <div class="sec-eye">Pricing</div>
+      <div class="sec-h">Three tiers. One standard:<br><em>attorney-grade protection.</em></div>
+      <p class="sec-p">Every tier includes full MLS access and licensed attorney-broker oversight. Choose the level of service that fits your needs.</p>
+    </div>
+    <div class="tiers-grid">
+      <div class="tier r rd1">
+        <div class="tier-badge">Essential</div>
+        <h3>AI Listing</h3>
+        <div class="tier-price">0.5%</div>
+        <div class="tier-pn">listing commission</div>
+        <div class="tier-desc">Maximum savings with full legal oversight. You handle showings — we handle everything else.</div>
+        <ul class="tier-list">
+          <li>Full MLS listing &amp; syndication</li>
+          <li>AI-generated listing &amp; pricing</li>
+          <li>100+ platform distribution</li>
+          <li>Buyer inquiry screening</li>
+          <li>Offer negotiation &amp; review</li>
+          <li>Attorney-backed contract to close</li>
+        </ul>
+        <a href="/sell" class="tier-btn">Get Started</a>
+      </div>
+      <div class="tier pop r rd2">
+        <div class="tier-badge">Concierge</div>
+        <h3>Full Service</h3>
+        <div class="tier-price">2%</div>
+        <div class="tier-pn">full-service commission</div>
+        <div class="tier-desc">The only full-service option in South Florida where your entire transaction is legally protected by attorney-client privilege.</div>
+        <ul class="tier-list">
+          <li>Everything in Essential</li>
+          <li>Professional photography coordination</li>
+          <li>Staging guidance &amp; preparation</li>
+          <li>Showing scheduling &amp; management</li>
+          <li>Open house coordination</li>
+          <li>Advanced negotiation strategy</li>
+          <li>Attorney-privileged communications</li>
+          <li>Post-closing legal consultation (12 mo)</li>
+        </ul>
+        <a href="/sell" class="tier-btn">Get Started</a>
+      </div>
+      <div class="tier r rd3">
+        <div class="tier-badge">Investor</div>
+        <h3>Portfolio</h3>
+        <div class="tier-price">Custom</div>
+        <div class="tier-pn">volume pricing</div>
+        <div class="tier-desc">Full transaction stack for investors — from acquisition through management, with attorney oversight at every stage.</div>
+        <ul class="tier-list">
+          <li>Acquisition &amp; disposition support</li>
+          <li>Legal due diligence per property</li>
+          <li>Entity formation &amp; structuring</li>
+          <li>Contract management across portfolio</li>
+          <li>Property management integration</li>
+          <li>Multi-property volume discounts</li>
+        </ul>
+        <a href="/contact" class="tier-btn">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTOR PIPELINE -->
+<section class="investor-section" id="invest">
+  <div class="container">
+    <div class="r" style="text-align:center;">
+      <div class="sec-eye">Investor Stack</div>
+      <div class="sec-h">One relationship. <em>Five stages. Zero gaps.</em></div>
+      <p class="sec-p" style="margin-left:auto;margin-right:auto;">Most investors juggle separate agents, attorneys, CPAs, and property managers. We consolidate the entire pipeline under one attorney-broker.</p>
+    </div>
+    <div class="pipeline r">
+      <div class="pipe-step">
+        <div class="pipe-num">01</div>
+        <h4>Find</h4>
+        <p>MLS access &amp;<br>acquisition sourcing</p>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-num">02</div>
+        <h4>Diligence</h4>
+        <p>Legal review &amp;<br>risk assessment</p>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-num">03</div>
+        <h4>Close</h4>
+        <p>Attorney-backed<br>contract &amp; closing</p>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-num">04</div>
+        <h4>Structure</h4>
+        <p>Entity formation<br>&amp; asset protection</p>
+      </div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step">
+        <div class="pipe-num">05</div>
+        <h4>Manage</h4>
+        <p>Property mgmt<br>via Bid Zen Capital</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" id="process">
+  <div class="container r">
+    <div class="sec-eye">Seller Process</div>
+    <div class="sec-h">Listed in minutes.<br><em>Protected at every step.</em></div>
+    <div class="proc-grid">
+      <div class="proc-item"><div class="proc-dot"></div><h4>Tell Us About Your Property</h4><p>Quick form or phone call. We pull comps and market data instantly.</p></div>
+      <div class="proc-item"><div class="proc-dot"></div><h4>AI Builds Your Listing</h4><p>Professional description, pricing strategy, and marketing plan — generated automatically.</p></div>
+      <div class="proc-item"><div class="proc-dot"></div><h4>Distributed Everywhere</h4><p>MLS, Zillow, Realtor.com, Redfin, and 100+ platforms simultaneously.</p></div>
+      <div class="proc-item"><div class="proc-dot"></div><h4>Close With an Attorney</h4><p>A licensed attorney and broker handles negotiations, contracts, and closing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SAVINGS -->
+<section class="calc-section" id="savings">
+  <div class="container">
+    <div class="r" style="text-align:center;"><div class="sec-eye">Savings Calculator</div><div class="sec-h">See what you <em>keep</em></div></div>
+    <div class="calc-box r">
+      <div class="calc-head">Estimated Home Value</div>
+      <div class="calc-val" id="cV">$750,000</div>
+      <input type="range" id="cS" min="100000" max="5000000" step="25000" value="750000" aria-label="Home value slider">
+      <div class="calc-labels"><span>$100K</span><span>$5M</span></div>
+      <div class="calc-stack">
+        <div class="cs cs-trad"><span class="cs-n">Traditional Agent <span class="cs-p">3%</span></span><span class="cs-v" id="xT">$22,500</span></div>
+        <div class="cs cs-mid"><span class="cs-n">Redfin <span class="cs-p">1.5%</span></span><span class="cs-v" id="xR">$11,250</span></div>
+        <div class="cs cs-mid"><span class="cs-n">Bid Zen Concierge <span class="cs-p">2%</span></span><span class="cs-v" id="xC">$15,000</span></div>
+        <div class="cs cs-ours"><span class="cs-n">Bid Zen Essential <span class="cs-p">0.5%</span></span><span class="cs-v" id="xB">$3,750</span></div>
+      </div>
+      <div class="calc-result">
+        <span class="cr-big" id="xSv">$18,750</span>
+        <span class="cr-sm">saved vs. traditional agent</span>
+      </div>
+      <p class="calc-fn">Listing commission only. Buyer's agent commission is separate and negotiable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section">
+  <div class="container">
+    <div class="r"><div class="sec-eye">Why Bid Zen</div><div class="sec-h">What makes this <em>different</em></div></div>
+    <div class="why-grid">
+      <div class="why-card r"><div class="why-icon">⚖</div><h4>Licensed Attorney &amp; Broker</h4><p>FL Bar #0057253. Broker Lic. CQ1060113. 20+ years across Florida, New York, Massachusetts, and Michigan.</p></div>
+      <div class="why-card r"><div class="why-icon">📡</div><h4>Full MLS Exposure</h4><p>Same MLS listing, same Zillow syndication, same platform distribution as any 6% listing. No shortcuts.</p></div>
+      <div class="why-card r"><div class="why-icon">⚡</div><h4>AI Replaces Overhead</h4><p>Listing creation, comp analysis, marketing distribution, buyer qualification — AI handles what used to justify 6%.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="r" style="text-align:center;"><div class="sec-eye">FAQ</div><div class="sec-h">Questions sellers <em>always ask</em></div></div>
+    <div class="faq-grid r">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What's the catch with 0.5%?</button>
+        <div class="faq-a"><p>No catch. At the Essential tier, you handle showings — we handle everything else: MLS listing, AI-powered marketing, buyer screening, offer negotiation, and attorney-backed contract to closing. The lower commission is possible because AI replaces the manual overhead, not the expertise.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Will my home get the same exposure as a 6% listing?</button>
+        <div class="faq-a"><p>Yes. Every Bid Zen listing goes on the MLS with full syndication to Zillow, Realtor.com, Redfin, and 100+ platforms. Buyer agents see your listing exactly the same way they see any other. There is no reduced visibility.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What's the difference between Essential and Concierge?</button>
+        <div class="faq-a"><p>Essential (0.5%) gives you full MLS listing, AI marketing, and attorney-backed closing — you manage showings. Concierge (2%) adds professional photography, showing management, open houses, advanced negotiation strategy, attorney-privileged communications on all deal terms, and 12 months of post-closing legal consultation. It's the only full-service option in South Florida that includes legal protection.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Do I still need to offer a buyer's agent commission?</button>
+        <div class="faq-a"><p>Buyer's agent commission is separate from your listing commission and is negotiable. We'll advise you on competitive commission rates for your market to ensure maximum buyer agent engagement. Our 0.5% or 2% covers the listing side only.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What does "attorney-client privilege" actually mean for me?</button>
+        <div class="faq-a"><p>When your broker is also your attorney, your strategic conversations — your bottom-line price, your financial motivations, your negotiating position — are legally privileged. In a dispute, the other side can't access them. With a traditional agent, those same conversations are fully discoverable. This matters most on high-value transactions where negotiation leverage is critical.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Is this a real brokerage or just a website?</button>
+        <div class="faq-a"><p>BidZen LLC is a licensed Florida real estate brokerage (CQ1060113) operated by Glen Shrayer, Esq. (FL Bar #0057253), a licensed attorney in four states with over 20 years of legal and real estate experience. This is a fully licensed, operating brokerage with full MLS membership.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════ HOA LEGAL ZONE ════════════════════════════════════════════ -->
+
+<div class="legal-transition"><div class="legal-tab">Separate Legal Services Division</div></div>
+
+<section class="hoa-zone" id="hoa">
+  <div class="hoa-grid">
+    <div>
+      <div class="hoa-eye">Florida Condo &amp; HOA Legal Services</div>
+      <h2>Hold your board <em>accountable.</em></h2>
+      <p class="hoa-text">Florida condo owners deserve transparency and accountability from their associations. Attorney Glen Shrayer provides flat-fee legal services to enforce your statutory rights — backed by deep firsthand experience navigating association governance, competitive bidding rules, and financial oversight disputes.</p>
+      <ul class="hoa-services">
+        <li>Official records requests</li>
+        <li>Governance audits</li>
+        <li>Demand letters to boards</li>
+        <li>Competitive bidding challenges</li>
+        <li>DBPR complaints &amp; arbitration</li>
+        <li>Assessment disputes</li>
+        <li>Board accountability actions</li>
+        <li>Excessive spending challenges</li>
+      </ul>
+      <a href="/hoa" class="hoa-cta-link">View Services &amp; Flat-Fee Pricing →</a>
+    </div>
+    <div class="hoa-disc">
+      <h4>Important Disclosure — Dual Practice</h4>
+      <p>HOA and condominium legal services are provided by <b>Glen Shrayer, Esq.</b> (FL Bar #0057253) in his capacity as a licensed Florida attorney. These services are <b>separate and distinct</b> from the real estate brokerage services offered by BidZen LLC (FL Broker Lic. CQ1060113).</p>
+      <div class="line"></div>
+      <p>Engagement for legal services creates an <b>attorney-client relationship</b> governed by the Florida Rules of Professional Conduct. Real estate brokerage services do <b>not</b> create an attorney-client relationship and are not subject to attorney-client privilege.</p>
+      <div class="line"></div>
+      <p>Legal representation is <b>never contingent</b> on using brokerage services, and vice versa. Each service operates under separate engagement terms, fee structures, trust accounts, and contact workflows.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="final-cta" id="contact">
+  <div class="container">
+    <div class="sec-eye">Get Started</div>
+    <div class="sec-h">Sell smarter. Keep more.<br>Stay protected.</div>
+    <p class="sec-p">Free home valuation. Choose Essential at 0.5% or full Concierge at 2%.</p>
+    <div class="cta-row">
+      <a href="/sell" class="btn-sage">List My Home →</a>
+      <a href="/buy" class="btn-edge2">Buyer Contract Review</a>
+      <a href="#hoa" class="btn-edge2">HOA Legal Services</a>
+    </div>
+    <p class="cta-tel">Or call: <a href="tel:+18888243936">1-888-8-BIDZEN</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-grid">
+    <div>
+      <div class="ft-brand">
+        <img src="/images/bidzen-logo.png" alt="BidZen" onerror="this.style.display='none'">
+        <span class="ft-brand-text">Bid<i>Zen</i></span>
+      </div>
+      <p class="ft-tag">Attorney-powered real estate with AI efficiency. Full MLS access, legal-grade protection. Equal Housing Opportunity.</p>
+    </div>
+    <div><h5>Real Estate</h5><ul class="fl"><li><a href="/sell">Sell Your Home</a></li><li><a href="/buy">Buy a Home</a></li><li><a href="#invest">Investor Services</a></li><li><a href="#process">How It Works</a></li><li><a href="/about">About</a></li></ul></div>
+    <div><h5>Legal Services</h5><ul class="fl"><li><a href="/hoa">HOA &amp; Condo Law</a></li><li><a href="/legal">Legal Disclosures</a></li><li><a href="https://shrayerlaw.com">Shrayer Law Firm →</a></li></ul></div>
+    <div><h5>Contact</h5><ul class="fl"><li><a href="tel:+18888243936">1-888-8-BIDZEN</a></li><li><a href="mailto:info@bidzen.com">info@bidzen.com</a></li><li>Fort Lauderdale, FL</li></ul></div>
+  </div>
+  <div class="ft-bottom">© 2026 BidZen LLC. All rights reserved.<br>Glen Shrayer, Esq. · FL Bar #0057253 · FL Broker CQ1060113 · <a href="/legal">Legal Disclosures</a> · Equal Housing Opportunity</div>
+</footer>
+
+<script>
+// Nav scroll
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 50), { passive: true });
+
+// Mobile menu
+const mobBtn = document.getElementById('mobBtn'), mobMenu = document.getElementById('mobMenu');
+mobBtn.addEventListener('click', () => {
+  mobMenu.classList.toggle('open');
+  mobBtn.classList.toggle('active');
+});
+function closeMob() {
+  mobMenu.classList.remove('open');
+  mobBtn.classList.remove('active');
+}
+
+// Calculator
+const sl = document.getElementById('cS');
+const fmt = n => '$' + n.toLocaleString('en-US');
+const $ = id => document.getElementById(id);
+sl.addEventListener('input', function () {
+  const v = +this.value;
+  $('cV').textContent = fmt(v);
+  $('xT').textContent = fmt(Math.round(v * 0.03));
+  $('xR').textContent = fmt(Math.round(v * 0.015));
+  $('xC').textContent = fmt(Math.round(v * 0.02));
+  $('xB').textContent = fmt(Math.round(v * 0.005));
+  $('xSv').textContent = fmt(Math.round(v * 0.025));
+});
+
+// FAQ
+function toggleFaq(btn) {
+  const a = btn.nextElementSibling;
+  const isOpen = a.classList.contains('open');
+  document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+  document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+  if (!isOpen) { btn.classList.add('open'); a.classList.add('open'); }
+}
+
+// Scroll reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('v'); obs.unobserve(e.target); } });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.r').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

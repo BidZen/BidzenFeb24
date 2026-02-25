@@ -389,7 +389,7 @@ a { text-decoration: none; color: inherit; }
 /* CALCULATOR */
 .calc-section { padding: 7rem 2.5rem; background: var(--white); }
 .calc-box {
-  max-width: 580px; margin: 3.5rem auto 0;
+  max-width: 660px; margin: 3.5rem auto 0;
   border: 1px solid #e4e0d8; border-radius: 22px;
   padding: 2.5rem; background: var(--white);
 }
@@ -420,24 +420,42 @@ input[type=range]::-moz-range-thumb {
   display: flex; justify-content: space-between;
   font-size: 0.65rem; color: var(--mid-l); margin: 0.3rem 0 1.5rem;
 }
-.calc-stack { display: flex; flex-direction: column; gap: 0.4rem; }
-.cs { display: flex; justify-content: space-between; align-items: center; padding: 0.65rem 0.85rem; border-radius: 10px; font-size: 0.85rem; }
-.cs-trad { background: #fdf5f2; }
-.cs-trad .cs-v { color: var(--red-soft); font-weight: 600; text-decoration: line-through; }
-.cs-mid { background: var(--cream); }
-.cs-mid .cs-v { color: var(--mid); font-weight: 500; }
-.cs-ours { background: var(--sage-dim); border: 1px solid rgba(5,150,105,0.12); }
-.cs-ours .cs-n { color: var(--sage); font-weight: 600; }
-.cs-ours .cs-v { color: var(--sage); font-weight: 700; }
-.cs-n { font-weight: 400; color: var(--dark); }
-.cs-p { font-size: 0.7rem; color: var(--mid-l); margin-left: 0.3rem; }
-.calc-result {
-  margin-top: 0.65rem; padding: 1.2rem;
-  background: var(--dark); border-radius: 14px;
+.nar-badge {
+  display: block; text-align: center;
+  background: #f0f9ff; border: 1px solid #bae6fd; color: #0369a1;
+  font-size: 0.68rem; font-weight: 500; padding: 0.35rem 0.85rem;
+  border-radius: 999px; margin: 0 auto 1.25rem;
+}
+.calc-table { width: 100%; margin-bottom: 0.6rem; }
+.ct-head { display: grid; grid-template-columns: 1.8fr 1fr 1.3fr 1.1fr; gap: 0.2rem; padding: 0.3rem 0.75rem 0.4rem; border-bottom: 1px solid #e4e0d8; }
+.ct-head span { font-size: 0.62rem; font-weight: 600; color: var(--mid-l); text-transform: uppercase; letter-spacing: 0.04em; text-align: right; }
+.ct-head span:first-child { text-align: left; }
+.ct-row { display: grid; grid-template-columns: 1.8fr 1fr 1.3fr 1.1fr; gap: 0.2rem; align-items: center; padding: 0.55rem 0.75rem; border-radius: 10px; margin-bottom: 0.3rem; }
+.ct-trad { background: #fdf5f2; }
+.ct-conc { background: var(--cream); }
+.ct-ess { background: var(--sage-dim); border: 1px solid rgba(5,150,105,0.12); }
+.ct-label { font-size: 0.8rem; font-weight: 500; color: var(--dark); }
+.ct-ess .ct-label { color: var(--sage); font-weight: 600; }
+.ct-col { text-align: right; }
+.ct-pct { font-size: 0.68rem; color: var(--mid); display: block; }
+.ct-amt { font-size: 0.8rem; font-weight: 600; display: block; color: var(--dark); }
+.ct-opt { font-size: 0.68rem; color: var(--mid-l); font-style: italic; display: block; text-align: right; }
+.ct-total-bad .ct-amt { color: #dc2626; }
+.ct-total-mid .ct-amt { color: var(--dark); }
+.ct-total-good .ct-amt { color: var(--sage); }
+.calc-saves { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.6rem; }
+.calc-result-primary {
+  padding: 1.2rem; background: var(--dark); border-radius: 14px;
   text-align: center; color: var(--off-w);
 }
-.calc-result .cr-big { font-family: var(--serif); font-style: italic; font-size: 2.4rem; display: block; line-height: 1; }
-.calc-result .cr-sm { font-size: 0.7rem; opacity: 0.4; display: block; margin-top: 0.2rem; }
+.calc-result-primary .cr-big { font-family: var(--serif); font-style: italic; font-size: 2.4rem; display: block; line-height: 1; }
+.calc-result-primary .cr-sm { font-size: 0.7rem; opacity: 0.4; display: block; margin-top: 0.2rem; }
+.calc-result-secondary {
+  padding: 0.85rem 1.2rem; background: var(--cream); border-radius: 12px;
+  text-align: center; color: var(--dark); border: 1px solid #e4e0d8;
+}
+.calc-result-secondary .cr-big { font-family: var(--serif); font-style: italic; font-size: 1.7rem; display: block; line-height: 1; }
+.calc-result-secondary .cr-sm { font-size: 0.7rem; color: var(--mid); display: block; margin-top: 0.2rem; }
 .calc-fn { font-size: 0.65rem; color: var(--mid-l); text-align: center; margin-top: 0.6rem; line-height: 1.6; }
 
 /* PROPERTY MANAGEMENT */
@@ -748,6 +766,10 @@ footer h5 {
   .proc-grid::before { display:none; }
   .ft-grid { grid-template-columns:1fr; }
   .calc-box { padding:1.5rem; }
+  .ct-head, .ct-row { grid-template-columns: 1.6fr 0.8fr 1.1fr 0.9fr; padding-left:0.5rem; padding-right:0.5rem; }
+  .ct-label { font-size:0.73rem; }
+  .ct-amt { font-size:0.73rem; }
+  .ct-pct { font-size:0.6rem; }
   .ribbon { display:none; }
   .form-row { grid-template-columns:1fr; }
   .why-grid { grid-template-columns:1fr; }
@@ -919,28 +941,47 @@ footer h5 {
     </div>
     <div class="calc-box r">
       <div class="calc-head">Estimated Home Value</div>
-      <div class="calc-val" id="cV">$750,000</div>
-      <input type="range" id="cS" min="100000" max="5000000" step="25000" value="750000" aria-label="Home value slider">
+      <div class="calc-val" id="cV">$900,000</div>
+      <input type="range" id="cS" min="100000" max="5000000" step="25000" value="900000" aria-label="Home value slider">
       <div class="calc-labels"><span>$100K</span><span>$5M</span></div>
-      <div class="calc-stack">
-        <div class="cs cs-trad">
-          <span class="cs-n">Traditional Agent <span class="cs-p">(6% total)</span></span>
-          <span class="cs-v" id="xT">$45,000</span>
+      <div class="nar-badge">Buyer&#8217;s agent fee: Optional since the 2024 NAR settlement</div>
+      <div class="calc-table">
+        <div class="ct-head">
+          <span></span>
+          <span>Listing %</span>
+          <span>Buyer Agent %</span>
+          <span>Total Cost</span>
         </div>
-        <div class="cs cs-mid">
-          <span class="cs-n">Bid Zen Concierge <span class="cs-p">(2% listing + 2.5% buyer)</span></span>
-          <span class="cs-v" id="xD">$33,750</span>
+        <div class="ct-row ct-trad">
+          <span class="ct-label">Traditional Agent</span>
+          <span class="ct-col"><span class="ct-pct">3%</span><span class="ct-amt" id="xTL">$27,000</span></span>
+          <span class="ct-col"><span class="ct-pct">3%</span><span class="ct-amt" id="xTB">$27,000</span></span>
+          <span class="ct-col ct-total-bad"><span class="ct-pct">6%</span><span class="ct-amt" id="xT">$54,000</span></span>
         </div>
-        <div class="cs cs-ours">
-          <span class="cs-n">Bid Zen Essential <span class="cs-p">(0.5% listing + 2.5% buyer)</span></span>
-          <span class="cs-v" id="xB">$22,500</span>
+        <div class="ct-row ct-conc">
+          <span class="ct-label">Bid Zen Concierge</span>
+          <span class="ct-col"><span class="ct-pct">2%</span><span class="ct-amt" id="xDL">$18,000</span></span>
+          <span class="ct-col"><span class="ct-opt">Optional</span></span>
+          <span class="ct-col ct-total-mid"><span class="ct-pct">2%</span><span class="ct-amt" id="xD">$18,000</span></span>
+        </div>
+        <div class="ct-row ct-ess">
+          <span class="ct-label">Bid Zen Essential</span>
+          <span class="ct-col"><span class="ct-pct">0.5%</span><span class="ct-amt" id="xBL">$4,500</span></span>
+          <span class="ct-col"><span class="ct-opt">Optional</span></span>
+          <span class="ct-col ct-total-good"><span class="ct-pct">0.5%</span><span class="ct-amt" id="xB">$4,500</span></span>
         </div>
       </div>
-      <div class="calc-result">
-        <span class="cr-big" id="xSv">$22,500</span>
-        <span class="cr-sm">saved vs. traditional agent at Essential tier</span>
+      <div class="calc-saves">
+        <div class="calc-result-primary">
+          <span class="cr-big" id="xSv">$49,500</span>
+          <span class="cr-sm">saved vs. traditional agent at Essential tier</span>
+        </div>
+        <div class="calc-result-secondary">
+          <span class="cr-big" id="xSvC">$36,000</span>
+          <span class="cr-sm">saved vs. traditional agent at Concierge tier</span>
+        </div>
       </div>
-      <p class="calc-fn">Bid Zen listing fee is 0.5% (Essential) or 2% (Concierge). Typical buyer agent commission is 2.5%. Traditional agent typically 6% total. Discount broker shown at 4% total.</p>
+      <p class="calc-fn">Listing commissions shown separately from buyer&#8217;s agent fees. Since the 2024 NAR settlement, sellers are no longer required to offer buyer&#8217;s agent compensation through the MLS &mdash; it is fully optional and negotiable. Traditional agent total assumes 3% listing + 3% buyer. Bid Zen clients keep the buyer-side commission entirely or use it to attract offers. Your actual savings may exceed the figures shown.</p>
     </div>
   </div>
 </section>
@@ -1251,22 +1292,29 @@ function closeMob() {
   mobBtn.classList.remove('active');
 }
 
-// Calculator — trad=6%, concierge=4.5% (2%+2.5%), essential=3% (0.5%+2.5%)
+// Calculator — trad=6% (3% listing + 3% buyer), concierge=2% listing only, essential=0.5% listing only
 const sl = document.getElementById('cS');
 const fmt = n => '$' + n.toLocaleString('en-US');
 const $id = id => document.getElementById(id);
 function updateCalc(v) {
   $id('cV').textContent = fmt(v);
-  const trad = Math.round(v * 0.06);
-  const concierge = Math.round(v * 0.045);
-  const essential = Math.round(v * 0.03);
+  const tradListing = Math.round(v * 0.03);
+  const tradBuyer = Math.round(v * 0.03);
+  const trad = tradListing + tradBuyer;
+  const concierge = Math.round(v * 0.02);
+  const essential = Math.round(v * 0.005);
+  $id('xTL').textContent = fmt(tradListing);
+  $id('xTB').textContent = fmt(tradBuyer);
   $id('xT').textContent = fmt(trad);
+  $id('xDL').textContent = fmt(concierge);
   $id('xD').textContent = fmt(concierge);
+  $id('xBL').textContent = fmt(essential);
   $id('xB').textContent = fmt(essential);
   $id('xSv').textContent = fmt(trad - essential);
+  $id('xSvC').textContent = fmt(trad - concierge);
 }
 sl.addEventListener('input', function() { updateCalc(+this.value); });
-updateCalc(750000);
+updateCalc(900000);
 
 // FAQ accordion
 function toggleFaq(btn) {

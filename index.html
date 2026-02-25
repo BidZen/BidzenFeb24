@@ -800,7 +800,7 @@ footer h5 {
   <div class="hero-inner">
     <div class="hero-tag">Licensed Real Estate Brokerage · Property Management · Condo &amp; HOA Law</div>
     <h1>Flat commission.<br><em>Attorneys handle closings.</em></h1>
-    <p class="hero-sub">Full MLS exposure. AI marketing. An attorney at the table. Starting at 0.5%.</p>
+    <p class="hero-sub">Full MLS exposure. AI marketing. Attorney-reviewed closings. Starting at 0.5%.</p>
     <div class="hero-ctas">
       <a href="#contact" class="btn-primary">Get Your Free Home Valuation</a>
       <a href="#services" class="btn-outline">Explore Our Services</a>
@@ -891,8 +891,8 @@ footer h5 {
       </div>
       <div class="proc-item">
         <div class="proc-dot"></div>
-        <h4>AI Builds Your Listing</h4>
-        <p>Professional description, pricing strategy, and a complete marketing plan &mdash; generated and reviewed by our team.</p>
+        <h4>Your Listing, Ready in Hours</h4>
+        <p>Professional description, pricing strategy, and marketing plan &mdash; built with AI, reviewed by our team before anything goes live.</p>
       </div>
       <div class="proc-item">
         <div class="proc-dot"></div>
@@ -926,19 +926,19 @@ footer h5 {
           <span class="cs-v" id="xT">$45,000</span>
         </div>
         <div class="cs cs-mid">
-          <span class="cs-n">Discount Broker <span class="cs-p">(4% total)</span></span>
-          <span class="cs-v" id="xD">$30,000</span>
+          <span class="cs-n">Bid Zen Concierge <span class="cs-p">(2% listing + 2.5% buyer)</span></span>
+          <span class="cs-v" id="xD">$33,750</span>
         </div>
         <div class="cs cs-ours">
-          <span class="cs-n">Bid Zen <span class="cs-p">(0.5% or 2% listing + 2.5% buyer)</span></span>
-          <span class="cs-v" id="xB">$30,000</span>
+          <span class="cs-n">Bid Zen Essential <span class="cs-p">(0.5% listing + 2.5% buyer)</span></span>
+          <span class="cs-v" id="xB">$22,500</span>
         </div>
       </div>
       <div class="calc-result">
-        <span class="cr-big" id="xSv">$15,000</span>
-        <span class="cr-sm">saved vs. traditional agent total commission</span>
+        <span class="cr-big" id="xSv">$22,500</span>
+        <span class="cr-sm">saved vs. traditional agent at Essential tier</span>
       </div>
-      <p class="calc-fn">Comparison shows total commission (listing + buyer side). Bid Zen listing fee is 0.5% (Essential) or 2% (Concierge). Typical buyer agent commission is 2.5%. Traditional agent typically 6% total. Discount broker shown at 4% total.</p>
+      <p class="calc-fn">Comparison assumes seller offers 2.5% buyer agent commission. Since the 2024 NAR settlement, this is negotiable — sellers can offer less or nothing at all. Your actual savings may be higher. Essential: 0.5% listing. Concierge: 2% listing. Traditional agent: 3% listing. All figures listing-side only unless noted.</p>
     </div>
   </div>
 </section>
@@ -1075,6 +1075,11 @@ footer h5 {
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">What is the total commission when I sell with Bid Zen?</button>
         <div class="faq-a"><p>Bid Zen charges 0.5% at the Essential tier (you handle showings) or 2% at the Concierge tier (we handle everything). The buyer's agent commission is separate and negotiable &mdash; typically around 2.5% in most Florida markets. Our savings calculator shows exactly what you keep.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Do I have to pay the buyer's agent?</button>
+        <div class="faq-a"><p>No. Since the 2024 NAR settlement, sellers are no longer required to offer buyer's agent compensation through the MLS. You can offer less, offer nothing, or negotiate it deal by deal. We'll advise you on what makes sense for your market — in some cases offering a competitive buyer's agent commission attracts more offers and nets you more; in others, you keep that money entirely. Our 0.5% or 2% listing fee covers the listing side only. The choice on the buyer side is yours.</p></div>
       </div>
 
       <div class="faq-item">
@@ -1244,19 +1249,19 @@ function closeMob() {
   mobBtn.classList.remove('active');
 }
 
-// Calculator — trad=6%, discount=4%, bidzen=4% (1.5%+2.5%)
+// Calculator — trad=6%, concierge=4.5% (2%+2.5%), essential=3% (0.5%+2.5%)
 const sl = document.getElementById('cS');
 const fmt = n => '$' + n.toLocaleString('en-US');
 const $id = id => document.getElementById(id);
 function updateCalc(v) {
   $id('cV').textContent = fmt(v);
   const trad = Math.round(v * 0.06);
-  const disc = Math.round(v * 0.04);
-  const bidzen = Math.round(v * 0.04); // 1.5% listing + 2.5% buyer
+  const concierge = Math.round(v * 0.045);
+  const essential = Math.round(v * 0.03);
   $id('xT').textContent = fmt(trad);
-  $id('xD').textContent = fmt(disc);
-  $id('xB').textContent = fmt(bidzen);
-  $id('xSv').textContent = fmt(trad - bidzen);
+  $id('xD').textContent = fmt(concierge);
+  $id('xB').textContent = fmt(essential);
+  $id('xSv').textContent = fmt(trad - essential);
 }
 sl.addEventListener('input', function() { updateCalc(+this.value); });
 updateCalc(750000);
